@@ -8,9 +8,13 @@
 }
 
 header {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
     display: grid;
     grid-template-columns: 250px auto;    
     background-color: #FFF;
+    z-index: 10000;
 }
 .brand {
     justify-self: stretch;
@@ -37,6 +41,7 @@ H2{
 
 /* Let's begin the menu */
 .topnav {
+    
     overflow: hidden;
     justify-self: end;
 }
